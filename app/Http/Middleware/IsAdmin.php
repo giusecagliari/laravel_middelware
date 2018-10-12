@@ -42,7 +42,7 @@ class IsAdmin
             if(Auth::user()->isAdmin()) {
                 redirect()->intended('/admin');
             } else {
-                return redirect()->intended('/');
+                return redirect('/');
             }
         }
 
